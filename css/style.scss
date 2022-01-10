@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+$sBright-orange: hsl(31, 77%, 52%);
+$Dark-cyan: hsl(184, 100%, 22%);
+$Very-dark-cyan: hsl(179, 100%, 13%);
+$white-paragraphs: hsla(0, 0%, 100%, 0.75);
+$Very-light-gray: hsl(0, 0%, 95%);
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Start Main Card
+.container {
+  padding: 6%;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  max-width: 1200px;
+
+  .card {
+    background-color: $sBright-orange;
+    padding: 5rem;
+
+    h1 {
+      font-size: 3.5rem;
+      font-family: "Big Shoulders Display", cursive;
+      text-transform: uppercase;
+      color: $white-paragraphs;
+      padding: 3rem 0;
+    }
+
+    p {
+      font-size: 1.7rem;
+      line-height: 1.7;
+      color: $white-paragraphs;
+      margin-bottom: 6rem;
+    }
+
+    a {
+      font-size: 1.7rem;
+      padding: 1.5rem 2.5rem;
+      border-radius: 4rem;
+      margin-bottom: 4rem;
+      background-color: $Very-light-gray;
+      color: $sBright-orange;
+      display: block;
+      width: fit-content;
+    }
+  }
+  .card:nth-child(2) {
+    background-color: $Dark-cyan;
+
+    a {
+      color: $Dark-cyan;
+    }
+  }
+  .card:last-child {
+    background-color: $Very-dark-cyan;
+
+    a {
+      color: $Very-dark-cyan;
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+// End Main Card
+
+// Start Media
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    height: 100%;
+  }
+
+  .cards {
+    flex-direction: column;
+    width: 375px;
+  }
+}

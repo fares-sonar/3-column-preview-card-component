@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  padding: 6%;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  max-width: 1200px;
+}
+
+.cards .card {
+  background-color: #e38826;
+  padding: 5rem;
+}
+
+.cards .card h1 {
+  font-size: 3.5rem;
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 3rem 0;
+}
+
+.cards .card p {
+  font-size: 1.7rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 6rem;
+}
+
+.cards .card a {
+  font-size: 1.7rem;
+  padding: 1.5rem 2.5rem;
+  border-radius: 4rem;
+  margin-bottom: 4rem;
+  background-color: #f2f2f2;
+  color: #e38826;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.cards .card:nth-child(2) {
+  background-color: #006970;
+}
+
+.cards .card:nth-child(2) a {
+  color: #006970;
+}
+
+.cards .card:last-child {
+  background-color: #004241;
+}
+
+.cards .card:last-child a {
+  color: #004241;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  body {
+    height: 100%;
+  }
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 375px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
